@@ -1,0 +1,44 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar"
+            android:id="@+id/toolbar"/>
+        <!-- Framelayout to display Fragments -->
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+    <!--<LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:id="@+id/drawerSide">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/list_background">
+            <Button
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:text="Close Employee"
+                android:id="@+id/closeEmployeeBtn"/>
+        </LinearLayout>
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/navigation_drawer"
+            android:name="redyetisoftworks.hiredrive.Fragments.NavigationDrawerFragment"
+            tools:layout="@layout/fragment_navigation_drawer"/>
+    </LinearLayout>-->
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item android:id="@+id/action_search"
+        android:title="Search"
+        android:orderInCategory="100"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_new_employee"
+        android:title="New Employee"
+        android:orderInCategory="200"
+        android:icon="@drawable/ic_action_new"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_sync_employees"
+        android:title="Sync Employees"
+        android:orderInCategory="300"
+        android:icon="@android:drawable/ic_popup_sync"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="400"
+        android:icon="@drawable/ic_action_settings"
+        app:showAsAction="ifRoom" />
+
+</menu>

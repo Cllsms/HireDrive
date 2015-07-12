@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+    <PreferenceCategory
+        android:title="Google Drive Login"
+        >
+
+        <EditTextPreference
+            android:key="gd_username_edittext_preference"
+            android:title="Username"
+            android:summary="Google Drive Username"
+            android:dialogTitle="Username" />
+
+        <EditTextPreference
+            android:key="gd_Password_edittext_preference"
+            android:title="Password"
+            android:summary="Google Drive Password"
+            android:dialogTitle="Password" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

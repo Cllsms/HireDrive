@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@android:color/white">
+	<ImageView
+		android:src="@drawable/ic_action_new"
+		android:id="@+id/SplashImageView"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_centerInParent="true" />
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/SplashTextView1"
+		android:layout_centerHorizontal="true"
+		android:layout_above="@+id/SplashMilesProgressBar" />
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/SplashTextView2"
+		android:layout_centerHorizontal="true"
+		android:layout_above="@+id/SplashPricingProgressBar" />
+	<ProgressBar
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="70dip"
+		android:id="@+id/SplashMilesProgressBar"
+		style="?android:attr/progressBarStyleHorizontal"
+		android:layout_marginLeft="2dip"
+		android:layout_marginRight="2dip"
+		android:layout_marginTop="2dip"
+		android:layout_centerHorizontal="true"
+		android:layout_width="fill_parent"
+		android:layout_alignParentBottom="true"
+		android:visibility="invisible" />
+	<ProgressBar
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="20dip"
+		android:id="@+id/SplashPricingProgressBar"
+		style="?android:attr/progressBarStyleHorizontal"
+		android:layout_marginLeft="2dip"
+		android:layout_marginRight="2dip"
+		android:layout_marginTop="2dip"
+		android:layout_centerHorizontal="true"
+		android:layout_width="fill_parent"
+		android:layout_alignParentBottom="true"
+		android:visibility="invisible" />
+	<ViewStub
+		android:layout_height="wrap_content"
+		android:id="@+id/SplashAboutViewStub"
+		android:layout_width="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout="@layout/item_navigation" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:text="1.0"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:id="@+id/SplashVersionNumberTextView" />
+
+    <LinearLayout
+        android:id="@+id/about_contact_info"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/SplashImageView"
+        android:padding="20dip"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/splash_web_site_layout"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="web."
+                android:textColor="@color/list_background"
+                android:id="@+id/textView"
+                android:layout_gravity="right"
+                android:gravity="right" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="www.igcsoftware.com"
+                android:textColor="#1300cd"
+                android:id="@+id/splash_web_site"
+                android:paddingLeft="5dip" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/splash_email_layout"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="email."
+                android:textColor="@color/list_background"
+                android:id="@+id/textView2"
+                android:layout_gravity="right"
+                android:gravity="right" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="sales@igcsoftware.com"
+                android:textColor="#1300cd"
+                android:id="@+id/splash_email"
+                android:paddingLeft="5dip" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/splash_phone_layout"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="tel."
+                android:textColor="@color/list_background"
+                android:id="@+id/textView1"
+                android:layout_gravity="right"
+                android:gravity="right" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#1300cd"
+                android:id="@+id/splash_phone"
+                android:paddingLeft="5dip" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/splash_fax_layout"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="fax."
+                android:textColor="@color/list_background"
+                android:id="@+id/textView4"
+                android:layout_gravity="right"
+                android:gravity="right" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="614-759.0907"
+                android:textColor="#1300cd"
+                android:id="@+id/splash_fax"
+                android:paddingLeft="5dip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
